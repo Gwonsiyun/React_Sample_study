@@ -27,12 +27,14 @@ function SearchRGB() {
     const colorBox = document.getElementById("colorBox");
     colorBox.innerText = `RGB : ${R},${G},${B}`;
     colorBox.style.backgroundColor = `rgb(${R},${G},${B})`;
+    console.log("setColor");
+    return;
   };
   useEffect(setColor, [R, G, B]);
 
   function ColorToHex(color) {
     let hexadecimal = Number(color).toString(16).toUpperCase();
-    return hexadecimal.length == 1 ? "0" + hexadecimal : hexadecimal;
+    return hexadecimal.length === 1 ? "0" + hexadecimal : hexadecimal;
   }
 
   function ConvertRGBtoHex(red, green, blue) {
@@ -40,25 +42,27 @@ function SearchRGB() {
   }
   return (
     <>
-      <div>
-        <div id={"colorBox"} className={"colorBox"} style={style}></div>
-        <div className={style.colorInput}>
-          R :{" "}
-          <input onChange={selectColor} id={"R"} type={"number"} value={R} />
-          <br />G :{" "}
-          <input onChange={selectColor} id={"G"} type={"number"} value={G} />
-          <br />B :{" "}
-          <input onChange={selectColor} id={"B"} type={"number"} value={B} />
-          <br />
-          HEX :{" "}
-          <input
-            onChange={selectColor}
-            id={"B"}
-            type={"text"}
-            value={hexCode}
-          />
+      <section>
+        <div>
+          <div id={"colorBox"} className={"colorBox"} style={style}></div>
+          <div className={style.colorInput}>
+            R :{" "}
+            <input onChange={selectColor} id={"R"} type={"number"} value={R} />
+            <br />G :{" "}
+            <input onChange={selectColor} id={"G"} type={"number"} value={G} />
+            <br />B :{" "}
+            <input onChange={selectColor} id={"B"} type={"number"} value={B} />
+            <br />
+            HEX :{" "}
+            <input
+              onChange={selectColor}
+              id={"B"}
+              type={"text"}
+              value={hexCode}
+            />
+          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

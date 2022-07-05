@@ -5,11 +5,9 @@ import SelectRGB from "./SelectRGB";
 function RGBCode() {
   return (
     <>
-      <div>
-        <SelectRGB />
-        <hr />
-        <SearchRGB />
-      </div>
+      <SelectRGB />
+      <hr />
+      <SearchRGB />
     </>
   );
 }
