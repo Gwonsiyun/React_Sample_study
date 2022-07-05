@@ -27,7 +27,6 @@ function SearchRGB() {
     const colorBox = document.getElementById("colorBox");
     colorBox.innerText = `RGB : ${R},${G},${B}`;
     colorBox.style.backgroundColor = `rgb(${R},${G},${B})`;
-    console.log("setColor");
     return;
   };
   useEffect(setColor, [R, G, B]);

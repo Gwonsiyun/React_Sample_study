@@ -1,9 +1,9 @@
 .colors {
-  width: 30px;
-  height: 30px;
-  /*display: inline-block;*/
-  float: left;
+  width: 10px;
+  height: 10px;
+  display: table-cell;
+  /*float: left;*/
   /*margin: 0;*/
   /*padding: 0;*/
-  border: 0.1px solid gray;
+  /*border: 0.1px solid gray;*/
 }
