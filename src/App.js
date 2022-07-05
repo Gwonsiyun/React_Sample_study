@@ -17,6 +17,10 @@ import HomeLink from "./routes/common/HomeLink";
 import HookUsePreventLeave from "./routes/Hooks/not use/usePreventLeave";
 import HookUseBeforeLeave from "./routes/Hooks/useEffect/HookUseBeforeLeave";
 import HookUseFadeIn from "./routes/Hooks/useEffect/HookUseFadeIn";
+import Counters from "./routes/counter/Counters";
+import HookUseRef from "./routes/Hooks/useEffect/HookUseRef";
+import HookUseNetwork from "./routes/Hooks/useEffect/HookUseNetwork";
+import RGBCode from "./routes/rgbCode/RGBCode";
 
 function App() {
   return (
@@ -38,10 +42,14 @@ function App() {
         />
         <Route path={"/HookUseBeforeLeave"} element={<HookUseBeforeLeave />} />
         <Route path={"/HookUseFadeIn"} element={<HookUseFadeIn />} />
+        <Route path={"/HookUseNetwork"} element={<HookUseNetwork />} />
+        <Route path={"/HookUseRef"} element={<HookUseRef />} />
         <Route path={"/ToDo"} element={<ToDo />} />
         <Route path={"/Coin"} element={<Coin />} />
         <Route path={"/Movies"} element={<Movies />} />
         <Route path={"/MovieDetail/:id"} element={<MovieDetail />} />
+        <Route path={"/Counters"} element={<Counters />} />
+        <Route path={"/RGBCode"} element={<RGBCode />} />
       </Routes>
     </Router>
   );

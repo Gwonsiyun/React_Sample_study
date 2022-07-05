@@ -46,6 +46,13 @@ function Home() {
         <li>
           <Link to={`/HookUseFadeIn`}>HookUseFadeIn</Link>
         </li>
+        <li>
+          <Link to={`/HookUseNetwork`}>HookUseNetwork</Link>
+        </li>
+        {/*이해가가지않아 테스트*/}
+        <li>
+          <Link to={`/HookUseRef`}>HookUseRef</Link>
+        </li>
       </ul>
 
       <div className={`${linkStyle.link2}`}>
@@ -63,6 +70,12 @@ function Home() {
       </div>
       <div className={`${linkStyle.link2}`}>
         <Link to={`/movies`}>movies</Link>
+      </div>
+      <div className={`${linkStyle.link2}`}>
+        <Link to={`/Counters`}>Counters</Link>
+      </div>
+      <div className={`${linkStyle.link2}`}>
+        <Link to={`/RGBCode`}>RGBCode</Link>
       </div>
     </div>
   );
